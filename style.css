@@ -604,6 +604,7 @@ nav i:hover{
     justify-content: center;
     height: 650px;
     padding: 30px 0px;
+    width: 100%;
 }
 .wd{
     width: 32%;
@@ -1171,5 +1172,124 @@ nav i:hover{
     .terms{
         width: 100%;
         font-size: 10px;
+    }
+    .menu-list ul li{
+        font-size: 27px;
+        font-weight: 900;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .small-list{
+        height: 30%;
+    }
+    .small-list ul{
+        flex-direction: column;
+        height: 100%;
+    }
+    .small-list ul li{
+        font-size: 15px;
+        padding: 0;
+        margin-left: 10px;
+    }
+    .small-list ul li:first-of-type {
+        padding: 10px;
+        width: 20%;
+        margin-left: 10px;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        cursor: pointer;
+      }
+      ::-webkit-scrollbar:hover{
+        width: 0px;
+        cursor: pointer; 
+      } 
+      ::-webkit-scrollbar-thumb {
+        background: #ff43e4;
+        border-radius: 30%;
+        cursor: grab;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0);
+      }
+}
+
+@media (min-width: 480px) and (max-width: 991px){
+
+    .move-img:nth-child(2) {
+        left: 600px;
+    }
+    .move-img:nth-child(5) {
+        right: 0%;
+    }
+    .section2 p {
+        padding: 0px 100px;
+    }
+    .txt-sec h1 {
+        font-size: 45px;
+    }
+    .img-sec .img-box h1 {
+        font-size: 80px;
+    }
+    .txt-sec p {
+        padding: 3em 3em 3em;
+    }
+    .check {
+        width: 42%;
+    }
+    .section4 .roll img:last-child {
+        left: 47px;
+    }
+    .pizza-img {
+        width: 100%;
+    }
+    .pizza-div h1 {
+        font-size: 55px;
+    }
+    .pizza {
+        width: 50%;
+    }
+    .meeting h1 {
+        font-size: 60px;
+    }
+    .meeting p {
+        width: 100%;
+    }
+    .meeting-img{
+        left: 96%;
+        width: 100%;
+    }
+    .meeting h2 {
+        font-size: 100px;
+    }
+    .wd {
+        width: 45%;
+    }
+    .location h1 {
+        font-size: 70px;
+    }
+    .location-img .img-div {
+        width: 80%;
+    }
+    .location-img .img-txt h1 {
+        font-size: 60px;
+    }
+    .loc-circle {
+        width: 27%;
+    }
+    .footer-circle .image {
+        left: 29px;
+        top: 27px;
+    }
+    .logos {
+        width: 30%;
+    }
+    .footer-bottom {
+        padding: 6em 6em;
+    }
+    .terms {
+        width: 65%;
     }
 }
