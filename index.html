@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +16,152 @@
 
 <body>
     <div class="main">
-        <h1>Bounce</h1>
+        <div class="logo-container">
+            <div class="logo-holder">
+                <svg viewBox="0 0 96.693 33.708" class="LogoIcon_container__3JfOP Logo_svg__13nwa">
+                    <g class="LogoIcon_above__xWbHa">
+                        <path
+                            d="M51.042.407h4.183a.354.354 0 01.371.218c.1.2.221.4.351.633-.107 0-.176.011-.245.011H51.27c-.186 0-.244-.052-.231-.234s.003-.395.003-.628z">
+                        </path>
+                        <path
+                            d="M63.49.407h1.848c.157 0 .215.046.2.2a3.536 3.536 0 000 .476c.008.142-.053.181-.186.181h-3.775c-.132 0-.176-.047-.171-.174a4.76 4.76 0 000-.5c-.009-.15.05-.193.2-.192.626.013 1.255.009 1.884.009z">
+                        </path>
+                        <path
+                            d="M36.337 1.264h-1.829c-.159 0-.234-.036-.217-.208.02-.208-.05-.486.059-.608.094-.106.385-.043.589-.043h3.221c.19 0 .287.033.258.249-.026.194.045.454-.057.568s-.36.041-.552.042c-.493.002-.984-.001-1.472 0z">
+                        </path>
+                        <path
+                            d="M48.784 1.263h-3.843c-.186 0-.27-.042-.248-.241a1.894 1.894 0 000-.4c-.017-.173.041-.23.22-.227.589.011 1.179 0 1.769 0h2.1z">
+                        </path>
+                        <path d="M19.592 1.246a8.436 8.436 0 014.446-1.247 8.537 8.537 0 014.549 1.247z"></path>
+                        <path d="M79.986 1.25h-8.923a8.517 8.517 0 014.6-1.225 8.908 8.908 0 014.334 1.177z"></path>
+                        <path
+                            d="M12.203 1.263H.284c-.278 0-.278 0-.279-.281a3.623 3.623 0 000-.377c-.017-.163.052-.217.2-.2a1 1 0 00.119 0c2.437 0 4.875-.016 7.312.008.944.01 1.889.092 2.83.178a3.941 3.941 0 011.559.5c.067.037.13.08.2.121z">
+                        </path>
+                        <path
+                            d="M90.352.422h6.081c.2 0 .28.046.256.253a2.76 2.76 0 000 .437c.005.122-.047.169-.165.161H84.3c-.26 0-.263 0-.259-.258 0-.184-.055-.444.041-.531s.359-.054.547-.054q2.862-.014 5.723-.008z">
+                        </path>
+                    </g>
+                    <g class="LogoIcon_above__xWbHa">
+                        <path d="M81.187 4.465H69.878a8.261 8.261 0 014.118-1.913 8.991 8.991 0 017.2 1.849z"></path>
+                        <path
+                            d="M48.791 2.83v1.636c-.075.005-.144.014-.214.014h-3.653c-.18 0-.241-.048-.235-.233.013-.423.006-.847 0-1.271 0-.108.015-.174.148-.173q1.936.006 3.872 0a.445.445 0 01.082.027z">
+                        </path>
+                        <path
+                            d="M63.45 4.485c-.609 0-1.219-.005-1.828 0-.165 0-.219-.05-.215-.215.01-.424.008-.848 0-1.272 0-.148.047-.193.194-.192q1.868.007 3.736 0c.155 0 .208.043.2.2q-.015.636 0 1.272c0 .157-.048.206-.2.2-.629-.001-1.258.007-1.887.007z">
+                        </path>
+                        <path
+                            d="M36.35 2.809c.615 0 1.231.006 1.846 0 .178 0 .225.053.22.226-.012.423-.009.847 0 1.27 0 .141-.049.182-.184.182H34.48c-.153 0-.192-.056-.19-.2.007-.43.008-.86 0-1.29 0-.151.052-.191.2-.19.616.006 1.238.002 1.86.002z">
+                        </path>
+                        <path
+                            d="M51.042 2.809H55.264a.3.3 0 01.313.178c.247.453.509.9.764 1.345.019.033.031.07.059.134-.088.007-.156.018-.224.018H51.27c-.188 0-.235-.059-.23-.237.009-.467.002-.936.002-1.438z">
+                        </path>
+                        <path d="M29.763 4.467H18.406a8.286 8.286 0 014.33-1.967 8.969 8.969 0 017.041 1.909z"></path>
+                        <path
+                            d="M.006 2.821c.1 0 .179-.011.257-.011 2.663 0 5.327-.006 7.99.007a12.839 12.839 0 012.585.235 3.7 3.7 0 012.148 1.226c.034.041.066.083.1.126.007.009 0 .025.008.065-.068 0-.136.013-.2.013H.253c-.191 0-.25-.051-.244-.244.008-.464-.003-.923-.003-1.417z">
+                        </path>
+                        <path
+                            d="M96.684 2.828v1.54c0 .037-.062.091-.106.107a.549.549 0 01-.177.006H84.314c-.274 0-.274 0-.274-.267 0-.4.005-.808 0-1.212 0-.148.045-.193.193-.192q6.13.005 12.261 0c.055.002.112.011.19.018z">
+                        </path>
+                    </g>
+                    <g class="LogoIcon_above__xWbHa">
+                        <path
+                            d="M44.693 9.403V8.93 6.288c0-.115 0-.2.161-.2 1.284.006 2.569 0 3.854 0a.641.641 0 01.075.011v3.3z">
+                        </path>
+                        <path d="M65.538 9.404h-4.106V6.091h3.874c.18 0 .236.046.234.231-.009.96 0 1.919 0 2.879z">
+                        </path>
+                        <path
+                            d="M.016 9.4V6.1c.079 0 .15-.011.22-.011H7.97a15.673 15.673 0 012.729.206 3.689 3.689 0 013.1 2.911c.013.056.027.113.046.19z">
+                        </path>
+                        <path
+                            d="M96.675 9.418H84.298c-.259 0-.259 0-.259-.258V6.106c.091 0 .161-.012.231-.012h12.185c.182 0 .235.048.234.232-.009.961 0 1.922 0 2.882-.004.058-.009.122-.014.21z">
+                        </path>
+                        <path d="M31.373 9.402H16.75a8.988 8.988 0 017.274-3.727 8.871 8.871 0 017.349 3.727z"></path>
+                        <path d="M68.209 9.41a9.047 9.047 0 0114.619 0z"></path>
+                        <path
+                            d="M51.055 9.399v-3.3c.07 0 .129-.009.187-.009h4.052a.247.247 0 01.259.127c.574 1.02 1.157 2.035 1.736 3.052a1.23 1.23 0 01.054.13z">
+                        </path>
+                        <path
+                            d="M38.4 6.091v3.316c-.082 0-.153.011-.224.011h-3.655c-.18 0-.237-.046-.235-.231q.013-1.44 0-2.88c0-.171.042-.226.221-.224 1.225.008 2.45 0 3.675 0z">
+                        </path>
+                    </g>
+                    <g>
+                        <path
+                            d="M.005 28.266v-.23-16.759c0-.195.04-.258.248-.258 2.73.009 5.46 0 8.191.014a10.5 10.5 0 012.657.291 3.748 3.748 0 012.8 3.292 4.8 4.8 0 01-.144 2.08 3.819 3.819 0 01-2.38 2.371c-.043.017-.086.035-.129.051s-.073.025-.163.055c.272.081.5.144.72.213a3.748 3.748 0 012.7 3.3 4.858 4.858 0 01-.976 3.68 4.528 4.528 0 01-2.688 1.639 13.9 13.9 0 01-3 .261q-3.767 0-7.534.016c-.095-.003-.195-.011-.302-.016zm6.269-7.143v-.016c-.643 0-1.286.006-1.929 0-.178 0-.223.055-.222.227q.01 1.67 0 3.34c0 .176.051.225.225.224 1.034-.007 2.068.009 3.1-.01a6.721 6.721 0 001.279-.139 2.279 2.279 0 00.845-.363 1.735 1.735 0 00.588-1.787 1.383 1.383 0 00-1.016-1.245 5.408 5.408 0 00-1.2-.218c-.556-.04-1.114-.013-1.67-.013zm-2.135-3.338h.241c1.007 0 2.015.013 3.021-.006a5.753 5.753 0 001.137-.142 1.442 1.442 0 001.229-1.391 1.413 1.413 0 00-1.166-1.729 4.652 4.652 0 00-1.038-.142c-1.073-.018-2.147-.007-3.22-.006-.065 0-.129.006-.205.01z">
+                        </path>
+                        <path
+                            d="M51.052 28.263V11.291c0-.266 0-.267.271-.267h3.937a.339.339 0 01.342.2c1.066 1.883 2.143 3.761 3.207 5.645q1.063 1.884 2.1 3.784c.225.411.421.838.654 1.307.008-.088.015-.127.013-.165-.033-1.039-.082-2.078-.1-3.117-.025-1.616-.028-3.233-.039-4.849-.006-.861-.005-1.723-.016-2.584 0-.159.037-.219.208-.218q1.859.01 3.718 0c.162 0 .2.053.2.205v16.859c0 .166-.059.2-.207.2q-2.028-.006-4.056 0a.255.255 0 01-.255-.14c-.8-1.4-1.616-2.8-2.4-4.208-1.166-2.1-2.308-4.212-3.461-6.319a.481.481 0 00-.044-.06v10.699z">
+                        </path>
+                        <path
+                            d="M15.051 19.649a9.043 9.043 0 119.038 9.051 9.051 9.051 0 01-9.038-9.051zm9.026-5.4a5.409 5.409 0 105.426 5.41 5.4 5.4 0 00-5.426-5.414z">
+                        </path>
+                        <path
+                            d="M88.174 21.139v3.7h8.5c.005.095.012.164.013.234v2.982c0 .173-.045.226-.222.225q-6.1-.007-12.207 0c-.179 0-.221-.054-.221-.226q.006-8.4 0-16.8c0-.071.007-.142.012-.234h12.379c.2 0 .258.05.255.253q-.016 1.481 0 2.962c0 .187-.056.233-.236.232q-4-.008-7.992 0h-.286c-.006.08-.013.137-.013.194 0 .948 0 1.9-.005 2.843 0 .181.058.22.227.219q3.478-.023 6.957-.035c.271 0 .272 0 .272.271v2.922c0 .188-.046.249-.242.249q-3.469 0-6.938.012z">
+                        </path>
+                        <path
+                            d="M48.809 16.631v4.394a11.588 11.588 0 01-.425 3.3 5.461 5.461 0 01-3.785 3.941 11.258 11.258 0 01-4.105.4 8.283 8.283 0 01-2.571-.539 5.261 5.261 0 01-3.211-3.759 13.481 13.481 0 01-.411-3.579v-9.484c0-.277 0-.277.282-.277h3.562c.274 0 .274 0 .274.283v9.9a5.888 5.888 0 00.372 2.2 2.53 2.53 0 002.457 1.653 4.211 4.211 0 001.722-.224 2.5 2.5 0 001.521-1.86 7.225 7.225 0 00.2-1.831v-9.862c0-.258 0-.259.259-.259h3.638c.176 0 .223.048.222.223-.003 1.788-.001 3.584-.001 5.38z">
+                        </path>
+                        <path
+                            d="M79.975 16.445a5.423 5.423 0 10.08 6.3c.07.058.141.113.207.173.782.714 1.562 1.432 2.348 2.142.108.1.12.16.026.274a9.058 9.058 0 01-15.126-1.62 8.7 8.7 0 01-.908-3.124 9.045 9.045 0 019.664-9.957 8.643 8.643 0 015.005 2c.485.4.9.889 1.353 1.337.089.089.105.159-.01.257-.85.717-1.695 1.441-2.542 2.163a.691.691 0 01-.097.055z">
+                        </path>
+                    </g>
+                    <g class="LogoIcon_below__DrMkS">
+                        <path
+                            d="M.017 33.281v-3.345h14.284c-.111.253-.2.493-.318.714a4.622 4.622 0 01-3.521 2.429 18.71 18.71 0 01-3.046.2H.3z">
+                        </path>
+                        <path
+                            d="M96.685 33.281H84.281c-.188 0-.248-.046-.246-.241.009-.961 0-1.922 0-2.883 0-.071.007-.143.012-.24h12.392c.187 0 .248.044.246.239-.01.968 0 1.935 0 2.9z">
+                        </path>
+                        <path d="M68.253 29.939h14.682a8.723 8.723 0 01-1.9 1.953 9.031 9.031 0 01-12.778-1.953z">
+                        </path>
+                        <path d="M16.762 29.929h14.677a9.025 9.025 0 01-14.677 0z"></path>
+                        <path
+                            d="M48.188 29.936c-.168.334-.3.647-.476.94a5.258 5.258 0 01-2.991 2.351 10.743 10.743 0 01-3.86.461 8.932 8.932 0 01-2.837-.517 5.136 5.136 0 01-3.108-3.143.487.487 0 01-.014-.092z">
+                        </path>
+                        <path
+                            d="M65.537 33.269c-.09 0-.161.012-.232.012h-3.993a.323.323 0 01-.325-.194c-.559-.99-1.128-1.976-1.693-2.963-.031-.055-.057-.113-.1-.2.1 0 .17-.01.239-.01h5.86c.186 0 .249.041.247.238-.01.967 0 1.933 0 2.9z">
+                        </path>
+                        <path d="M51.052 33.262v-3.326h4.089v3.326z"></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
         <div class="video">
             <video src="https://content.bouncepingpong.com/app/uploads/2021/01/intro.mp4" preload="auto" loop autoplay
                 muted>
             </video>
             <div class="arrow">
-                <i class="fal fa-arrow-alt-down"></i>
+                <svg viewBox="0 0 71.421 100.678" class="Hero_arrow__1jrv9 DownArrow_container__1_z9t">
+                    <g transform="translate(-13.985 -14.316)">
+                        <path class="Hero_arrowPath__1Gb2I"
+                            d="M14.7 78.133l35.277 36.149L84.7 79.42 71.521 66.215c-.026-.485-12.513 13.211-12.513 13.211s.007-40.707-.018-41.074l-19.013-.215.432 40.855-12.914-12.777z"
+                            stroke-miterlimit="10"></path>
+                        <path class="Hero_arrowPath__1Gb2I" transform="translate(0 -2)" opacity=".8"
+                            d="M40 28.896h19v6.09H40z"></path>
+                        <path class="Hero_arrowPath__1Gb2I" transform="translate(0 -3)" opacity=".6"
+                            d="M40 20.827h19v3.985H40z"></path>
+                        <path class="Hero_arrowPath__1Gb2I" transform="translate(0 -4)" opacity=".3"
+                            d="M40 14.816h19v1.987H40z"></path>
+                    </g>
+                </svg>
             </div>
             <div class="watch">
                 <h1>WATCH</h1>
-                <i class="fal fa-play-circle fa-2x"></i>
+                <div class="play-logo">
+                    <svg viewBox="0 0 74 74" class="Hero_toggleLongVideoSvg__2TLyt">
+                        <g data-name="Group 5">
+                            <g fill="none" stroke="currentColor" transform="rotate(90 37 37)">
+                                <circle cx="37" cy="37" r="37" stroke="none"></circle>
+                                <circle cx="37" cy="37" r="36.5"></circle>
+                            </g>
+                        </g>
+                        <g fill="none">
+                            <path d="M55 37L27 52V22z"></path>
+                            <path fill="currentColor"
+                                d="M52.88235 37.000001L28 23.67017v26.659662l24.88235-13.329831m2.11765 0L27 52V22.000002L55 37z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
             </div>
         </div>
         <nav>
@@ -34,7 +172,7 @@
         <p class="marquee">
             <span>Good vibes all round -&nbsp;Good vibes all round -&nbsp;</span>
         </p>
-          <p class="marquee marquee2">
+        <p class="marquee marquee2">
             <span>Good vibes all round -&nbsp;Good vibes all round -&nbsp;</span>
         </p>
         <div class="book-div">
@@ -43,7 +181,113 @@
     </div>
     <div class="menu" id="menu">
         <div class="head">
-            <h1>BOUNCE</h1>
+            <div class="logo-holder">
+                <svg viewBox="0 0 96.693 33.708" class="LogoIcon_container__3JfOP Logo_svg__13nwa">
+                    <g class="LogoIcon_above__xWbHa">
+                        <path
+                            d="M51.042.407h4.183a.354.354 0 01.371.218c.1.2.221.4.351.633-.107 0-.176.011-.245.011H51.27c-.186 0-.244-.052-.231-.234s.003-.395.003-.628z">
+                        </path>
+                        <path
+                            d="M63.49.407h1.848c.157 0 .215.046.2.2a3.536 3.536 0 000 .476c.008.142-.053.181-.186.181h-3.775c-.132 0-.176-.047-.171-.174a4.76 4.76 0 000-.5c-.009-.15.05-.193.2-.192.626.013 1.255.009 1.884.009z">
+                        </path>
+                        <path
+                            d="M36.337 1.264h-1.829c-.159 0-.234-.036-.217-.208.02-.208-.05-.486.059-.608.094-.106.385-.043.589-.043h3.221c.19 0 .287.033.258.249-.026.194.045.454-.057.568s-.36.041-.552.042c-.493.002-.984-.001-1.472 0z">
+                        </path>
+                        <path
+                            d="M48.784 1.263h-3.843c-.186 0-.27-.042-.248-.241a1.894 1.894 0 000-.4c-.017-.173.041-.23.22-.227.589.011 1.179 0 1.769 0h2.1z">
+                        </path>
+                        <path d="M19.592 1.246a8.436 8.436 0 014.446-1.247 8.537 8.537 0 014.549 1.247z"></path>
+                        <path d="M79.986 1.25h-8.923a8.517 8.517 0 014.6-1.225 8.908 8.908 0 014.334 1.177z"></path>
+                        <path
+                            d="M12.203 1.263H.284c-.278 0-.278 0-.279-.281a3.623 3.623 0 000-.377c-.017-.163.052-.217.2-.2a1 1 0 00.119 0c2.437 0 4.875-.016 7.312.008.944.01 1.889.092 2.83.178a3.941 3.941 0 011.559.5c.067.037.13.08.2.121z">
+                        </path>
+                        <path
+                            d="M90.352.422h6.081c.2 0 .28.046.256.253a2.76 2.76 0 000 .437c.005.122-.047.169-.165.161H84.3c-.26 0-.263 0-.259-.258 0-.184-.055-.444.041-.531s.359-.054.547-.054q2.862-.014 5.723-.008z">
+                        </path>
+                    </g>
+                    <g class="LogoIcon_above__xWbHa">
+                        <path d="M81.187 4.465H69.878a8.261 8.261 0 014.118-1.913 8.991 8.991 0 017.2 1.849z"></path>
+                        <path
+                            d="M48.791 2.83v1.636c-.075.005-.144.014-.214.014h-3.653c-.18 0-.241-.048-.235-.233.013-.423.006-.847 0-1.271 0-.108.015-.174.148-.173q1.936.006 3.872 0a.445.445 0 01.082.027z">
+                        </path>
+                        <path
+                            d="M63.45 4.485c-.609 0-1.219-.005-1.828 0-.165 0-.219-.05-.215-.215.01-.424.008-.848 0-1.272 0-.148.047-.193.194-.192q1.868.007 3.736 0c.155 0 .208.043.2.2q-.015.636 0 1.272c0 .157-.048.206-.2.2-.629-.001-1.258.007-1.887.007z">
+                        </path>
+                        <path
+                            d="M36.35 2.809c.615 0 1.231.006 1.846 0 .178 0 .225.053.22.226-.012.423-.009.847 0 1.27 0 .141-.049.182-.184.182H34.48c-.153 0-.192-.056-.19-.2.007-.43.008-.86 0-1.29 0-.151.052-.191.2-.19.616.006 1.238.002 1.86.002z">
+                        </path>
+                        <path
+                            d="M51.042 2.809H55.264a.3.3 0 01.313.178c.247.453.509.9.764 1.345.019.033.031.07.059.134-.088.007-.156.018-.224.018H51.27c-.188 0-.235-.059-.23-.237.009-.467.002-.936.002-1.438z">
+                        </path>
+                        <path d="M29.763 4.467H18.406a8.286 8.286 0 014.33-1.967 8.969 8.969 0 017.041 1.909z"></path>
+                        <path
+                            d="M.006 2.821c.1 0 .179-.011.257-.011 2.663 0 5.327-.006 7.99.007a12.839 12.839 0 012.585.235 3.7 3.7 0 012.148 1.226c.034.041.066.083.1.126.007.009 0 .025.008.065-.068 0-.136.013-.2.013H.253c-.191 0-.25-.051-.244-.244.008-.464-.003-.923-.003-1.417z">
+                        </path>
+                        <path
+                            d="M96.684 2.828v1.54c0 .037-.062.091-.106.107a.549.549 0 01-.177.006H84.314c-.274 0-.274 0-.274-.267 0-.4.005-.808 0-1.212 0-.148.045-.193.193-.192q6.13.005 12.261 0c.055.002.112.011.19.018z">
+                        </path>
+                    </g>
+                    <g class="LogoIcon_above__xWbHa">
+                        <path
+                            d="M44.693 9.403V8.93 6.288c0-.115 0-.2.161-.2 1.284.006 2.569 0 3.854 0a.641.641 0 01.075.011v3.3z">
+                        </path>
+                        <path d="M65.538 9.404h-4.106V6.091h3.874c.18 0 .236.046.234.231-.009.96 0 1.919 0 2.879z">
+                        </path>
+                        <path
+                            d="M.016 9.4V6.1c.079 0 .15-.011.22-.011H7.97a15.673 15.673 0 012.729.206 3.689 3.689 0 013.1 2.911c.013.056.027.113.046.19z">
+                        </path>
+                        <path
+                            d="M96.675 9.418H84.298c-.259 0-.259 0-.259-.258V6.106c.091 0 .161-.012.231-.012h12.185c.182 0 .235.048.234.232-.009.961 0 1.922 0 2.882-.004.058-.009.122-.014.21z">
+                        </path>
+                        <path d="M31.373 9.402H16.75a8.988 8.988 0 017.274-3.727 8.871 8.871 0 017.349 3.727z"></path>
+                        <path d="M68.209 9.41a9.047 9.047 0 0114.619 0z"></path>
+                        <path
+                            d="M51.055 9.399v-3.3c.07 0 .129-.009.187-.009h4.052a.247.247 0 01.259.127c.574 1.02 1.157 2.035 1.736 3.052a1.23 1.23 0 01.054.13z">
+                        </path>
+                        <path
+                            d="M38.4 6.091v3.316c-.082 0-.153.011-.224.011h-3.655c-.18 0-.237-.046-.235-.231q.013-1.44 0-2.88c0-.171.042-.226.221-.224 1.225.008 2.45 0 3.675 0z">
+                        </path>
+                    </g>
+                    <g>
+                        <path
+                            d="M.005 28.266v-.23-16.759c0-.195.04-.258.248-.258 2.73.009 5.46 0 8.191.014a10.5 10.5 0 012.657.291 3.748 3.748 0 012.8 3.292 4.8 4.8 0 01-.144 2.08 3.819 3.819 0 01-2.38 2.371c-.043.017-.086.035-.129.051s-.073.025-.163.055c.272.081.5.144.72.213a3.748 3.748 0 012.7 3.3 4.858 4.858 0 01-.976 3.68 4.528 4.528 0 01-2.688 1.639 13.9 13.9 0 01-3 .261q-3.767 0-7.534.016c-.095-.003-.195-.011-.302-.016zm6.269-7.143v-.016c-.643 0-1.286.006-1.929 0-.178 0-.223.055-.222.227q.01 1.67 0 3.34c0 .176.051.225.225.224 1.034-.007 2.068.009 3.1-.01a6.721 6.721 0 001.279-.139 2.279 2.279 0 00.845-.363 1.735 1.735 0 00.588-1.787 1.383 1.383 0 00-1.016-1.245 5.408 5.408 0 00-1.2-.218c-.556-.04-1.114-.013-1.67-.013zm-2.135-3.338h.241c1.007 0 2.015.013 3.021-.006a5.753 5.753 0 001.137-.142 1.442 1.442 0 001.229-1.391 1.413 1.413 0 00-1.166-1.729 4.652 4.652 0 00-1.038-.142c-1.073-.018-2.147-.007-3.22-.006-.065 0-.129.006-.205.01z">
+                        </path>
+                        <path
+                            d="M51.052 28.263V11.291c0-.266 0-.267.271-.267h3.937a.339.339 0 01.342.2c1.066 1.883 2.143 3.761 3.207 5.645q1.063 1.884 2.1 3.784c.225.411.421.838.654 1.307.008-.088.015-.127.013-.165-.033-1.039-.082-2.078-.1-3.117-.025-1.616-.028-3.233-.039-4.849-.006-.861-.005-1.723-.016-2.584 0-.159.037-.219.208-.218q1.859.01 3.718 0c.162 0 .2.053.2.205v16.859c0 .166-.059.2-.207.2q-2.028-.006-4.056 0a.255.255 0 01-.255-.14c-.8-1.4-1.616-2.8-2.4-4.208-1.166-2.1-2.308-4.212-3.461-6.319a.481.481 0 00-.044-.06v10.699z">
+                        </path>
+                        <path
+                            d="M15.051 19.649a9.043 9.043 0 119.038 9.051 9.051 9.051 0 01-9.038-9.051zm9.026-5.4a5.409 5.409 0 105.426 5.41 5.4 5.4 0 00-5.426-5.414z">
+                        </path>
+                        <path
+                            d="M88.174 21.139v3.7h8.5c.005.095.012.164.013.234v2.982c0 .173-.045.226-.222.225q-6.1-.007-12.207 0c-.179 0-.221-.054-.221-.226q.006-8.4 0-16.8c0-.071.007-.142.012-.234h12.379c.2 0 .258.05.255.253q-.016 1.481 0 2.962c0 .187-.056.233-.236.232q-4-.008-7.992 0h-.286c-.006.08-.013.137-.013.194 0 .948 0 1.9-.005 2.843 0 .181.058.22.227.219q3.478-.023 6.957-.035c.271 0 .272 0 .272.271v2.922c0 .188-.046.249-.242.249q-3.469 0-6.938.012z">
+                        </path>
+                        <path
+                            d="M48.809 16.631v4.394a11.588 11.588 0 01-.425 3.3 5.461 5.461 0 01-3.785 3.941 11.258 11.258 0 01-4.105.4 8.283 8.283 0 01-2.571-.539 5.261 5.261 0 01-3.211-3.759 13.481 13.481 0 01-.411-3.579v-9.484c0-.277 0-.277.282-.277h3.562c.274 0 .274 0 .274.283v9.9a5.888 5.888 0 00.372 2.2 2.53 2.53 0 002.457 1.653 4.211 4.211 0 001.722-.224 2.5 2.5 0 001.521-1.86 7.225 7.225 0 00.2-1.831v-9.862c0-.258 0-.259.259-.259h3.638c.176 0 .223.048.222.223-.003 1.788-.001 3.584-.001 5.38z">
+                        </path>
+                        <path
+                            d="M79.975 16.445a5.423 5.423 0 10.08 6.3c.07.058.141.113.207.173.782.714 1.562 1.432 2.348 2.142.108.1.12.16.026.274a9.058 9.058 0 01-15.126-1.62 8.7 8.7 0 01-.908-3.124 9.045 9.045 0 019.664-9.957 8.643 8.643 0 015.005 2c.485.4.9.889 1.353 1.337.089.089.105.159-.01.257-.85.717-1.695 1.441-2.542 2.163a.691.691 0 01-.097.055z">
+                        </path>
+                    </g>
+                    <g class="LogoIcon_below__DrMkS">
+                        <path
+                            d="M.017 33.281v-3.345h14.284c-.111.253-.2.493-.318.714a4.622 4.622 0 01-3.521 2.429 18.71 18.71 0 01-3.046.2H.3z">
+                        </path>
+                        <path
+                            d="M96.685 33.281H84.281c-.188 0-.248-.046-.246-.241.009-.961 0-1.922 0-2.883 0-.071.007-.143.012-.24h12.392c.187 0 .248.044.246.239-.01.968 0 1.935 0 2.9z">
+                        </path>
+                        <path d="M68.253 29.939h14.682a8.723 8.723 0 01-1.9 1.953 9.031 9.031 0 01-12.778-1.953z">
+                        </path>
+                        <path d="M16.762 29.929h14.677a9.025 9.025 0 01-14.677 0z"></path>
+                        <path
+                            d="M48.188 29.936c-.168.334-.3.647-.476.94a5.258 5.258 0 01-2.991 2.351 10.743 10.743 0 01-3.86.461 8.932 8.932 0 01-2.837-.517 5.136 5.136 0 01-3.108-3.143.487.487 0 01-.014-.092z">
+                        </path>
+                        <path
+                            d="M65.537 33.269c-.09 0-.161.012-.232.012h-3.993a.323.323 0 01-.325-.194c-.559-.99-1.128-1.976-1.693-2.963-.031-.055-.057-.113-.1-.2.1 0 .17-.01.239-.01h5.86c.186 0 .249.041.247.238-.01.967 0 1.933 0 2.9z">
+                        </path>
+                        <path d="M51.052 33.262v-3.326h4.089v3.326z"></path>
+                    </g>
+                </svg>
+            </div>
             <i onclick="hideMenu()" class="fal fa-times"></i>
         </div>
         <div class="menu-list">
@@ -72,19 +316,19 @@
         <div class="overlay">
             <div class="move-img-div">
                 <div class="move-img">
-                    <img src="images/image.jpg" alt="">
+                    <img src="images/image.jpg" alt="" data-aos="fade-in">
                 </div>
                 <div class="move-img">
-                    <img src="images/image (1).jpg" alt="">
+                    <img src="images/image (1).jpg" alt="" data-aos="fade-in">
                 </div>
                 <div class="move-img">
-                    <img src="images/image (2).jpg" alt="">
+                    <img src="images/image (2).jpg" alt="" data-aos="fade-in">
                 </div>
                 <div class="move-img">
-                    <img src="images/image (3).jpg" alt="">
+                    <img src="images/image (3).jpg" alt="" data-aos="fade-in">
                 </div>
                 <div class="move-img">
-                    <img src="images/image (4).jpg" alt="">
+                    <img src="images/image (4).jpg" alt="" data-aos="fade-in">
                 </div>
             </div>
         </div>
@@ -97,36 +341,55 @@
     <div class="section3">
         <section class="img-sec">
             <div class="img-box" id="img-box">
+                <img src="images/ping.jpg">
+                <img src="images/ball.jpg" alt="">
+                <img src="images/beer.jpg" alt="">
+                <img src="images/board.jpg">
+                <img src="images/guru.jpg">
                 <h1 id="light-txt1">GAMES</h1>
                 <h1 id="light-txt2">GAMES</h1>
                 <h1>GAMES</h1>
             </div>
         </section>
         <section class="txt-sec">
-            <div>
-                <h1>PING PONG</h1>
-                <h1>WONDERBALL</h1>
-                <h1>BEER PONG</h1>
-                <h1>SHUFFLEBOARD</h1>
-                <h1>GAMES GURUS</h1>
+            <div id="ping-games">
+                <h1 onclick="changeImg(1)">PING PONG</h1>
+                <h1 onclick="changeImg(2)">WONDERBALL</h1>
+                <h1 onclick="changeImg(3)">BEER PONG</h1>
+                <h1 onclick="changeImg(4)">SHUFFLEBOARD</h1>
+                <h1 onclick="changeImg(5)">GAMES GURUS</h1>
             </div>
-            <div>
+            <div id="p-tag">
                 <p>Like most things in life, Ping Pong is more fun with a group of your pals. At Bounce you don’t need
                     mad Ping Pong skills to have an epic time.</p>
-                <!-- <p>Get ready to experience Wonderball, a high tech, immersive experience where you choose what to play
+                <p>Get ready to experience Wonderball, a high tech, immersive experience where you choose what to play
                     from our selection of games.</p>
                 <p>The rules for the table are easy, throw the ball and eliminate all your competitors cups and walk
                     away a champion, it’s as simple as that. Beer pong, prosecco pong or whatever your poison is, if you
                     sink ’em you drink ’em!</p>
                 <p>What’s shuffleboard we hear you ask? Well it’s kind of like bowling meets air hockey meets curling.
                     But also kind of not. All you need to know is it’s great craic with laughs guaranteed!</p>
-                <p>Sit back, strap in and get ready to meet our awesome team of Games Gurus.</p> -->
+                <p>Sit back, strap in and get ready to meet our awesome team of Games Gurus.</p>
             </div>
             <div class="check">
                 <span>CHECK IT OUT</span>
-                <div class="circle">
-                    <i class="fas fa-arrow-alt-right"></i>
-                </div>
+                    <svg viewBox="0 0 92 92" class="LinkArrow_svg__1EIvQ CtaLink_svg__GGepH">
+                        <g class="arrow-svg">
+                            <path class="LinkArrow_arrowStroke__ZL3Wv" fill="currentColor" stroke-miterlimit="10"
+                                transform="rotate(-90 45.6795 23.3555)"
+                                d="M22.817 46.915279l20.366632-20.523346-6.452976-6.414139-6.996765 7.399818-2.58993 2.73912V1.721003h-8.94783l.04636 25.04911.00693 3.747351-2.59071-2.70755-7.252953-7.580027-5.97371 5.87608L22.817 46.915279m-.006909 2.136463L.313001 26.086322l8.1251-7.99231 8.30439 8.678881-.04914-26.55189h11.95061v26.12605l8.053389-8.51731 8.606731 8.55493-22.49399 22.667069z">
+                            </path>
+                            <path class="LinkArrow_arrowFill__VmGiv" transform="rotate(-90 45.6795 23.3555)"
+                                stroke="none"
+                                d="M0,25.865l8.125-7.992,8.3,8.679L16.38,0H28.331V26.126l8.053-8.517,8.607,8.555L22.5,48.831Z">
+                            </path>
+                        </g>
+                        <g class="circle-svg" transform-origin="46px 46px"
+                            style="transform: none; transform-origin: 46px 46px;">
+                            <circle fill="none" stroke="currentColor" stroke-width="1.5" opacity=".5" cx="46" cy="46"
+                                r="45.25"></circle>
+                        </g>
+                    </svg>
             </div>
         </section>
     </div>
@@ -154,9 +417,23 @@
             <span>Old Street, Farringdon</span>
             <div class="check pizza">
                 <span>CHECK IT OUT</span>
-                <div class="circle">
-                    <i class="fas fa-arrow-alt-right"></i>
-                </div>
+                <svg viewBox="0 0 92 92" class="LinkArrow_svg__1EIvQ CtaLink_svg__GGepH">
+                    <g class="arrow-svg">
+                        <path class="LinkArrow_arrowStroke__ZL3Wv" fill="currentColor" stroke-miterlimit="10"
+                            transform="rotate(-90 45.6795 23.3555)"
+                            d="M22.817 46.915279l20.366632-20.523346-6.452976-6.414139-6.996765 7.399818-2.58993 2.73912V1.721003h-8.94783l.04636 25.04911.00693 3.747351-2.59071-2.70755-7.252953-7.580027-5.97371 5.87608L22.817 46.915279m-.006909 2.136463L.313001 26.086322l8.1251-7.99231 8.30439 8.678881-.04914-26.55189h11.95061v26.12605l8.053389-8.51731 8.606731 8.55493-22.49399 22.667069z">
+                        </path>
+                        <path class="LinkArrow_arrowFill__VmGiv" transform="rotate(-90 45.6795 23.3555)"
+                            stroke="none"
+                            d="M0,25.865l8.125-7.992,8.3,8.679L16.38,0H28.331V26.126l8.053-8.517,8.607,8.555L22.5,48.831Z">
+                        </path>
+                    </g>
+                    <g class="circle-svg" transform-origin="46px 46px"
+                        style="transform: none; transform-origin: 46px 46px;">
+                        <circle fill="none" stroke="currentColor" stroke-width="1.5" opacity=".5" cx="46" cy="46"
+                            r="45.25"></circle>
+                    </g>
+                </svg>
             </div>
             <h5>ALL OFFERS & EVENTS</h5>
             <div class="pizza-img" id="pizza-img"></div>
@@ -170,9 +447,23 @@
                 conferences and business events in line with the latest government guidelines.</p>
             <div class="check pizza wd">
                 <span>CHECK IT OUT</span>
-                <div class="circle">
-                    <i class="fas fa-arrow-alt-right"></i>
-                </div>
+                <svg viewBox="0 0 92 92" class="LinkArrow_svg__1EIvQ CtaLink_svg__GGepH">
+                    <g class="arrow-svg">
+                        <path class="LinkArrow_arrowStroke__ZL3Wv" fill="currentColor" stroke-miterlimit="10"
+                            transform="rotate(-90 45.6795 23.3555)"
+                            d="M22.817 46.915279l20.366632-20.523346-6.452976-6.414139-6.996765 7.399818-2.58993 2.73912V1.721003h-8.94783l.04636 25.04911.00693 3.747351-2.59071-2.70755-7.252953-7.580027-5.97371 5.87608L22.817 46.915279m-.006909 2.136463L.313001 26.086322l8.1251-7.99231 8.30439 8.678881-.04914-26.55189h11.95061v26.12605l8.053389-8.51731 8.606731 8.55493-22.49399 22.667069z">
+                        </path>
+                        <path class="LinkArrow_arrowFill__VmGiv" transform="rotate(-90 45.6795 23.3555)"
+                            stroke="none"
+                            d="M0,25.865l8.125-7.992,8.3,8.679L16.38,0H28.331V26.126l8.053-8.517,8.607,8.555L22.5,48.831Z">
+                        </path>
+                    </g>
+                    <g class="circle-svg" transform-origin="46px 46px"
+                        style="transform: none; transform-origin: 46px 46px;">
+                        <circle fill="none" stroke="currentColor" stroke-width="1.5" opacity=".5" cx="46" cy="46"
+                            r="45.25"></circle>
+                    </g>
+                </svg>
             </div>
             <div class="meeting-img" id="meeting-img">
                 <h2 id="meeting-txt1">HIRE</h2>
@@ -189,16 +480,33 @@
             <h1>LOCATIONS</h1>
         </section>
         <section class="location-img">
-            <div class="img-div" id="img-div"></div>
-            <div class="img-txt">
+            <div class="img-div" id="img-div">
+                <img src="images/table2.jpg" alt="">
+                <img src="images/table.jpg" alt="">
+            </div>
+            <div class="img-txt" id="img-txt">
                 <h1 onmouseover="MouseOver(this)">OLD STREET</h1>
-                <h1 onmouseover="MouseOverChange(this)" onmouseout="MouseOut(this)">FARRINGDON</h1>
+                <h1 onmouseover="MouseOverChange(this)">FARRINGDON</h1>
             </div>
             <div class="check loc-circle">
                 <span>VIEW OUR LOCATIONS</span>
-                <div class="circle">
-                    <i class="fas fa-arrow-alt-right"></i>
-                </div>
+                <svg viewBox="0 0 92 92" class="LinkArrow_svg__1EIvQ CtaLink_svg__GGepH">
+                    <g class="arrow-svg">
+                        <path class="LinkArrow_arrowStroke__ZL3Wv" fill="currentColor" stroke-miterlimit="10"
+                            transform="rotate(-90 45.6795 23.3555)"
+                            d="M22.817 46.915279l20.366632-20.523346-6.452976-6.414139-6.996765 7.399818-2.58993 2.73912V1.721003h-8.94783l.04636 25.04911.00693 3.747351-2.59071-2.70755-7.252953-7.580027-5.97371 5.87608L22.817 46.915279m-.006909 2.136463L.313001 26.086322l8.1251-7.99231 8.30439 8.678881-.04914-26.55189h11.95061v26.12605l8.053389-8.51731 8.606731 8.55493-22.49399 22.667069z">
+                        </path>
+                        <path class="LinkArrow_arrowFill__VmGiv" transform="rotate(-90 45.6795 23.3555)"
+                            stroke="none"
+                            d="M0,25.865l8.125-7.992,8.3,8.679L16.38,0H28.331V26.126l8.053-8.517,8.607,8.555L22.5,48.831Z">
+                        </path>
+                    </g>
+                    <g class="circle-svg" transform-origin="46px 46px"
+                        style="transform: none; transform-origin: 46px 46px;">
+                        <circle fill="none" stroke="currentColor" stroke-width="1.5" opacity=".5" cx="46" cy="46"
+                            r="45.25"></circle>
+                    </g>
+                </svg>
             </div>
         </section>
     </div>
@@ -254,6 +562,10 @@
         </div>
     </div>
 </body>
+<script>
+    AOS.init();
+</script>
+
 <script>
     var lefttxt = document.getElementById("left-img"),
         righttxt = document.getElementById("right-img"),
@@ -311,26 +623,89 @@
         }
     }
     function MouseOver(elem) {
-        document.getElementById("img-div").style.backgroundImage = 'url(images/table.jpg)';
-        setTimeout(() => {
-            document.getElementById("img-div").style.transform = 'rotate(0deg)';
-        }, 500);
+      let imgdiv =  document.getElementById("img-div"),
+      image = imgdiv.getElementsByTagName("img");
+      let imgtxt =  document.getElementById("img-txt"),
+      text = imgtxt.getElementsByTagName("h1");
+        image[1].style.display = "block";
+        image[0].style.display = "none";
+        text[0].style.color = "white";
+        text[1].style.color = "transparent";
     }
     function MouseOverChange(elem) {
-        document.getElementById("img-div").style.backgroundImage = 'url(images/table2.jpg)';
-        document.getElementById("img-div").style.transform = 'opcity(0.5)';
-        setTimeout(() => {
-            document.getElementById("img-div").style.transform = 'opcity(1)';
-        }, 500);
+        let imgdiv =  document.getElementById("img-div"),
+        image = imgdiv.getElementsByTagName("img");
+        let imgtxt =  document.getElementById("img-txt"),
+        text = imgtxt.getElementsByTagName("h1");
+        image[0].style.display = "block";
+        image[1].style.display = "none";
+        text[1].style.color = "white";
+        text[0].style.color = "transparent";
     }
-    function MouseOut(elem) {
-        document.getElementById("img-div").style.backgroundImage = 'url(images/table.jpg)';
-    }
-    function showMenu(){
+    function showMenu() {
         document.getElementById("menu").style.display = "block"
     }
-    function hideMenu(){
+    function hideMenu() {
         document.getElementById("menu").style.display = "none"
+    }
+    var indexValue = 1;
+    var ping = document.getElementById("ping-games");
+    var heading = ping.getElementsByTagName("h1");
+    var imgBox = document.getElementById("img-box");
+    var images = imgBox.getElementsByTagName("img");
+    var para = document.getElementById("p-tag");
+    var p = para.getElementsByTagName("p");
+    change();
+    function change() {
+        for (let index = 0; index < images.length; index++) {
+            images[index].style.display = "none";
+            images[0].style.display = "block";
+            heading[0].style.color = "white";
+            p[index].style.display = "none";
+            p[0].style.display = "block";
+        }
+    }
+    function changeImg(num) {
+        indexValue = num;
+        for (let index = 0; index < images.length; index++) {
+            images[index].style.display = "none";
+            if (indexValue == 1) {
+                images[indexValue - 1].style.display = "block";
+            } else {
+                images[indexValue - 2].style.display = "block";
+            }
+        }
+        for (let index = 0; index < heading.length; index++) {
+            heading[index].style.color = "transparent";
+        }
+        for (let index = 0; index < p.length; index++) {
+            p[index].style.display = "none"
+
+        }
+        if (indexValue == 1) {
+            images[0].style.display = "block";
+            heading[0].style.color = "white";
+            p[0].style.display = "block";
+        } else if (indexValue == 2) {
+            images[1].style.display = "block";
+            heading[1].style.color = "white";
+            p[1].style.display = "block";
+        } else if (indexValue == 3) {
+            images[2].style.display = "block";
+            heading[2].style.color = "white";
+            p[2].style.display = "block";
+        } else if (indexValue == 4) {
+            images[3].style.display = "block";
+            heading[3].style.color = "white";
+            p[3].style.display = "block";
+        } else if (indexValue == 5) {
+            images[4].style.display = "block";
+            heading[4].style.color = "white";
+            p[4].style.display = "block";
+        }
+        setTimeout(() => {
+            imgbox.style.animation = 'none';
+        }, 1000);
     }
 </script>
 

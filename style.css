@@ -34,14 +34,13 @@ body{
   
   .marquee span {
     display: inline-block;
-    padding-left: 2900px;
+    padding-left: 3550px;
     animation: marquee 30s linear infinite;
-    color: white;
     font-size: 120px;
     font-weight: 900;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 3px white;
     color: transparent;
-    animation-delay: 0s;
+    text-transform: uppercase;
   }
   
   .marquee2 span {
@@ -75,7 +74,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 50px;
+    padding: 35px 50px;
+}
+.menu .head .logo-holder{
+    width: 12%;
+    height: 30%;
+    fill: #412a78;
 }
 .head i{
     font-size: 45px;
@@ -128,6 +132,23 @@ body{
     justify-content: space-between;
     background: linear-gradient(180deg,#541566, #1e083d);
     height: 695px;
+}
+.logo-container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    overflow: hidden;
+}
+.logo-holder{
+    width: 45%;
+    height: 30%;
+    fill: #ffffff;
+}
+.logo-holder:hover,.menu .head .logo-holder:hover{
+    transform: scale(1.1);
+    fill: #ff43e4;
 }
 .main h1,.txt h1{
     width: 28%;
@@ -183,8 +204,8 @@ nav h5{
     padding: 6px 12px;
 }
 nav h5:nth-child(2){
-    border: 1px solid #ff43e4;
-    color: #ff43e4;
+    border: 1px solid;
+    color: white;
 }
 nav h5:hover{
 color: #ff43e4;
@@ -241,7 +262,7 @@ nav i:hover{
 }
 .book-div{
     position: fixed;
-    top: 70%;
+    top: 80%;
     height: 100px;
     width: 100px;
     left: 4%;
@@ -267,13 +288,13 @@ nav i:hover{
 }
 @keyframes zoom{
     0%{
-        transform: scale(.5);
+        transform: scale(.3);
     }
     10%{
-        transform: scale(1);
+        transform: scale(1.3);
     }
     20%{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     30%,100%{
         transform: scale(1);
@@ -281,13 +302,21 @@ nav i:hover{
 }
 .arrow{
     position: absolute;
-    background: transparent;
-    bottom: -70px;
-    left: 30%;
-    color: white;
-    font-size: 120px;
-    width: 60%;
+    bottom: -40px;
+    left: 22%;
+    width: 10%;
     z-index: 1;
+}
+.arrow svg{
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke: white;
+    transition: all .5s;
+}
+.arrow:hover svg{
+    fill: white;
+    transform: translateY(23px);
+    transition: all .5s;
 }
 .watch{
     display: flex;
@@ -295,29 +324,31 @@ nav i:hover{
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 8px;
+    bottom: 40px;
     right: 0%;
     color: white;
     z-index: 1;
 }
 .watch h1{
-    margin-right: 50px;
-    font-size: 40px;
+    margin-right: 26px;
+    font-size: 35px;
     -webkit-text-stroke: 2px white;
     color: transparent;
     font-weight: 900;
-}
-.watch i{
-    font-size: 60px;
+    transition:all .5s;
 }
 .watch:hover h1{
-    transform: translateX(-10px);
+    transform: translateX(-12px);
     -webkit-text-stroke: aqua;
     color: #ef4ac0;
     transition:all .5s;
 }
-.watch:hover i{
-    font-size: 80px;
+.play-logo{
+    width: 16%;
+    transition:all .5s;
+}
+.watch:hover .play-logo{
+    transform: scale(1.3);
     transition:all .5s;
 }
 .section2{
@@ -390,37 +421,67 @@ nav i:hover{
     line-height: 1.2;
     cursor: pointer;
 }
+.active{
+    color: white;
+}
 .txt-sec p{
     padding: 3em 7em 3em;
     font-size: 18px;
     color: white;
+    animation: movetxt .5s linear;
+    transition: all 1s;
+}
+@keyframes movetxt{
+    from{
+        opacity: 0;
+        transform: translateX(-85px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 .check{
     display: flex;
-    width: 28%;
+    width: 34%;
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 19%;
+    left: 14%;
     top: -20px;
+}
+.check svg{
+    fill: none;
+    color: gray;
+    width: 85px;
+    overflow: visible;
+    transition: all .5s;
 }
 .check:hover span{
     color: yellow;
     transition: all .5s;
+    margin-left: 45px;
 }
-.check:hover .circle{
+.check:hover  .circle-svg{
     transition: all .5s;
-    transform: scale(1.2);
+    transform: scale(1.2) !important;
     left: 0;
 }
-.check:hover .circle i{
-    transition: all .5s;
-    color: #ef4ac0;
+.check:hover .arrow-svg{
+    stroke: none;
+    fill: #ef4ac0;
+}
+svg .arrow-svg{
+    stroke: yellow;
+    stroke-width: .5px;
 }
 .check span{
     font-size: 22px;
     font-weight: 900 !important;
     color: #ef4ac0;
+    margin-left: 61px;
+    transition: all .5s;
+    line-height: 1;
+    text-align: left;
 }
 .circle{
     width: 140px;
@@ -438,14 +499,29 @@ nav i:hover{
     color: yellow;
 }
 .img-sec .img-box{
-    background: url(images/ping.jpg);
     width: 108%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     position: relative;
     z-index: 0;
+}
+.img-sec .img-box img{
+    position: absolute;
+    animation: slide .5s linear;
+    transition: all 1s ease;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+@keyframes slide{
+    0%{
+        left: -100%;
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+        left: 0%;
+    }
 }
 .img-sec .img-box::before{
     content: "";
@@ -583,8 +659,8 @@ nav i:hover{
     font-weight: 900;
 }
 .pizza{
-    width: 36%;
-    left: 0%;
+    width: 43%;
+    left: -8%;
     top: 40px;
 }
 .pizza-img{
@@ -607,7 +683,7 @@ nav i:hover{
     width: 100%;
 }
 .wd{
-    width: 32%;
+    width: 38%;
 }
 .meeting{
     width: 45%;
@@ -700,7 +776,6 @@ nav i:hover{
     align-items: center;
     position: relative;
     opacity: 0.7;
-    background: url(images/table.jpg);
     transition: all 1s ease;
 }
 .location-img img{
@@ -710,7 +785,22 @@ nav i:hover{
     object-fit: cover;
     object-position: center;
     top: 40px;
-    
+    animation: rotate .2s linear;
+    transform: rotate(0deg);
+}
+@keyframes rotate{
+    0%{
+        opacity: 0;
+        transform: rotate(20deg) scale(.5);
+    }
+    50%{
+        opacity: .5;
+        transform: rotate(11deg) scale(.8);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
 }
 .location-img .img-txt{
     position: absolute;
@@ -739,8 +829,8 @@ nav i:hover{
 .loc-circle{
     position: absolute;
     top: 50%;
-    left: 42%;
-    width: 19%;
+    left: 37%;
+    width: 21%;
     text-align: center;
 }
 .section7::after{
@@ -864,6 +954,16 @@ nav i:hover{
 
 
 @media (max-width:480px){
+    .logo-container{
+        position: absolute;
+        top: -35px;
+        left: -25px;
+        z-index: 1;
+        width: 50%;
+    }
+    .logo-holder {
+        width: 50%;
+    }
     .main h1{
         position: absolute;
         top: -30px;
@@ -1047,7 +1147,7 @@ nav i:hover{
     }
     .pizza{
         width: 58%;
-        left: 0%;
+        left: -20%;
         padding-left: 43px;
         top: 43%;
     }
@@ -1130,7 +1230,7 @@ nav i:hover{
         width: 60%;
     }
     .footer{
-        height: 53vh;
+        height: 44vh;
     }
     .footer .list{
         display: none;
@@ -1160,7 +1260,7 @@ nav i:hover{
     .footer-bottom{
         padding: 30px;
         flex-direction: column;
-        padding-top: 0;
+        padding-top: 16px;
     }
     .logos{
         width: 70%;
