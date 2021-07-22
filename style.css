@@ -817,6 +817,9 @@ svg .arrow-svg{
     margin: 15px;
     line-height: 1;
 }
+.location-img .img-txt h1:first-child{
+    color: white;
+}
 .location-img .img-txt h1:hover{
     color: white;
 }
@@ -954,6 +957,17 @@ svg .arrow-svg{
 
 
 @media (max-width:480px){
+    .arrow {
+        left: 41%;
+        width: 15%;
+    }
+    .play-logo {
+        width: 35%;
+    }
+    .marquee span {
+        font-size: 80px;
+        padding-left: 2360px;
+    }
     .logo-container{
         position: absolute;
         top: -35px;
@@ -1118,7 +1132,7 @@ svg .arrow-svg{
     }
     .section5{
         flex-direction: column;
-        height: 150vh;
+        height: 110vh;
     }
     .pizza-div{
         left: 0;
@@ -1195,8 +1209,9 @@ svg .arrow-svg{
         left: 45%;
     }
     .wd{
-        top: 80%;
-        width: 49%;
+        top: 73%;
+        width: 48%;
+        left: -37px;
     }
     .section7{
         height: 500px;
@@ -1318,6 +1333,23 @@ svg .arrow-svg{
 
 @media (min-width: 480px) and (max-width: 991px){
 
+    .watch h1 {
+        margin-right: 38px;
+    }
+    .play-logo {
+        width: 25%;
+    }
+    .arrow {
+        left: 40%;
+        width: 12%;
+    }
+    .marquee span{
+        font-size: 90px;
+        padding-left: 2650px;
+    }
+    nav{
+        width: 40%;
+    }
     .move-img:nth-child(2) {
         left: 600px;
     }
