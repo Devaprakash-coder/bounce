@@ -991,6 +991,9 @@ svg .arrow-svg{
 
 
 @media (max-width:480px){
+    #loading .logo-holder{
+        width: 50%;
+    }
     .arrow {
         left: 41%;
         width: 15%;
@@ -1047,6 +1050,11 @@ svg .arrow-svg{
         top: 83%;
         left: 3%;
         animation: none;
+        width: 80px;
+        height: 80px;
+    }
+    .book-div span{
+        font-size: 14px;
     }
     .section2{
         height: 700px;
